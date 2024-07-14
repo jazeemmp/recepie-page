@@ -1,121 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
-:root{
-    --heading:"Young Serif", serif;
-    --para:"Outfit", sans-serif;
-    --line:1px solid hsl(30, 18%, 87%);
-    --brown:hsl(14, 45%, 36%);
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --heading: "Young Serif", serif;
+  --para: "Outfit", sans-serif;
+  --line: 1px solid hsl(30, 18%, 87%);
+  --brown: hsl(14, 45%, 36%);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: var(--para);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:hsl(30, 54%, 90%);
-    overflow: scroll;
-    font-size: 16px;
-    color:hsl(30, 10%, 34%);
+body {
+  font-family: var(--para);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  overflow: scroll;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
 }
 /* Global Decelation */
-h2{
-    font-family: var(--heading);
-    font-weight: 400;
-    color:var(--brown) ;
+h2 {
+  font-family: var(--heading);
+  font-weight: 400;
+  color: var(--brown);
 }
-ul,ol{
-    margin: 10px;
+ul,
+ol {
+  margin: 10px;
 }
-ul li,ol li{
-    margin: 10px;
-    padding: 0 15px;
+ul li,
+ol li {
+  margin: 10px;
+  padding: 0 15px;
 }
-ul li span,ol li span{
-    font-weight: 600;
+ul li span,
+ol li span {
+  font-weight: 600;
 }
 li::marker {
-    color:var(--brown) ;
-    font-weight: 600;
+  color: var(--brown);
+  font-weight: 600;
 }
-hr{
-    border-top: var(--line);
+hr {
+  border-top: var(--line);
 }
 /* Global decelaration ends */
-.card{
-    width: 100%;
-    max-width: 700px;
-    background-color: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-    border-radius: 20px;
+.card {
+  width: 100%;
+  max-width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  border-radius: 20px;
 }
-.card img{
-    width: 90%;
-    border-radius: 10px;
-    margin: 30px;
+.card img {
+  width: 90%;
+  border-radius: 10px;
+  margin: 30px;
 }
-.text-container{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.text-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.text-container h1{
-    font-family: var(--heading);
-    font-weight: 400;
-    font-size:2.4em;
-    color: hsl(24, 5%, 18%);
+.text-container h1 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 2.4em;
+  color: hsl(24, 5%, 18%);
 }
-.top p{
-    width: 100%;
-    margin: 10px 0;
+.top p {
+  width: 100%;
+  margin: 10px 0;
 }
-.box{
-    background-color:  hsl(330, 100%, 98%);
-    padding: 20px;
-    border-radius: 10px;
+.box {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
 }
-.box p{
-    color: hsl(332, 51%, 32%);
-    font-weight: 700;
-    font-size: 1.2rem;
+.box p {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
-.nutrition p{
-    margin: 20px 0;
+.nutrition p {
+  margin: 20px 0;
 }
-table{
-    margin: 20px auto;
-    width: 95%;
-    border-collapse: collapse;
+table {
+  margin: 20px auto;
+  width: 95%;
+  border-collapse: collapse;
 }
-table th,td{
-   border-bottom: var(--line);
-   padding: 10px;
+table th,
+td {
+  border-bottom: var(--line);
+  padding: 10px;
 }
-table tr td span{
-    color: var(--brown);
-    font-weight: 700;
+table tr td span {
+  color: var(--brown);
+  font-weight: 700;
 }
-.non{
-    border-bottom: none;
-    padding-bottom: 30px;
+.non {
+  border-bottom: none;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 600px) {
-    .card{
-        margin: 0;
-        border-radius: 0;
-    }
-    .card img{
-        width: 100%;
-        margin: 0 0 30px;
-    }
-    .box{
-        width: 90%;
-    }
+  .card {
+    margin: 0;
+    border-radius: 0;
   }
+  .card img {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .box {
+    width: 90%;
+  }
+}
